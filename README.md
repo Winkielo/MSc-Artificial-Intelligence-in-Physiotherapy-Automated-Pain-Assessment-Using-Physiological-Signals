@@ -7,7 +7,7 @@ The Automated Pain Assessment (APA) System is a proof-of-concept designed to pre
 
 The system leverages a hybrid data processing strategy, synchronizing pre-processed physiological data (`x.npy`) with continuous pain labels from raw CSV files (NRS for PMED, CoVAS for PMCD). This approach allows for a regression-based analysis to predict pain on a continuous 0-10 scale, which aligns with the standard Numerical Rating Scale (NRS) used in physiotherapy.
 
-The ultimate goal is to provide physiotherapists with a tool for remote, data-driven pain assessment, improving diagnostic accuracy and enabling personalized treatment planning.
+The ultimate goal is to provide physiotherapists with a tool for remote, data-driven pain assessment, improving diagnostic accuracy and enabling personalized treatment planning. Develop a comprehensive clinical tool with: - NLP for patient pain descriptions. - Patient profiles with physiotherapist notes/treatment plans. - Pain localization and administrative automation (medical/insurance forms). - EEG-based emotion classification (LSTM + Random Forest) for physical/emotional pain. - Bioelectronic neuromodulation therapies (e.g., Medtronic, LivaNova).
 
 ### 1.2 Key Objectives
 - **Framework Design**: Develop a modular framework to parse and synchronize BVP, EMG, EDA, and RESP signals with continuous pain labels.
@@ -74,10 +74,13 @@ AI_Physiotherapy_Pain_Assessment/
 
 ## 6. Future Enhancements
 The modular design of this project allows for several future extensions:
-- **Advanced XAI**: Integrate methods like SHAP or LIME for deeper model interpretability.
-- **NLP Integration**: Incorporate patient narratives to add another modality to the pain assessment.
-- **EEG Analysis**: Add EEG signal processing for emotion classification to distinguish between physical and emotional pain.
-- **Patient Profiling**: Develop longitudinal patient profiles to track pain over time.
+-  Implement Explainable AI (SHAP/LIME) for feature interpretability.
+-  Integrate NLP for patient narrative analysis.
+-  Add EEG-based emotion classification (LSTM + Random Forest).
+-  Develop patient profiling via k-means clustering.
+-  Suggest bioelectronic neuromodulation therapies.
+-  Automate medical/insurance form completion.
+-  Provide code stubs for all enhancements.
 
 ---
 *This project is for academic purposes as part of an MSc in Artificial Intelligence.*
